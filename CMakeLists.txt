@@ -10,4 +10,4 @@ include_directories(${FFMPEG_INCLUDE_DIRS})
 
 add_executable(ffmpeg-boilerplate src/main.cpp)
 
-target_link_libraries(ffmpeg-boilerplate PRIVATE ffmpeg)
+target_link_libraries(ffmpeg-boilerplate PRIVATE ${FFMPEG_LIBRARIES})
