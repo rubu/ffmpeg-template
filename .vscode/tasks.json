@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "setup-windows",
+            "type": "shell",
+            "command": "${workspaceRoot}/scripts/setup-windows.bat",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "setup-vs-build",
+            "type": "shell",
+            "command": "${workspaceRoot}/scripts/setup-vs-build.bat",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
